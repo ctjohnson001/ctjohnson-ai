@@ -29,7 +29,7 @@ export default function Research() {
         <div style={{ fontSize: 10, letterSpacing: "0.08em", color: AMBER_DARK, textTransform: "uppercase", marginBottom: "2rem", fontFamily: fontMono }}>
           Working paper · v0.5 · June 2026 · not yet peer-reviewed
         </div>
-        <p style={{ fontSize: 13, color: "#555", lineHeight: 1.9, maxWidth: 640, fontFamily: fontMono }}>
+        <p style={{ fontSize: 15, color: "#555", lineHeight: 1.85, maxWidth: 660, fontFamily: fontMono }}>
           Large language models are stateless with respect to the people a user works with and through: each
           conversation begins without a persistent model of who those people are, what they want, or the history
           between them. This is an architectural property, not a deficit that scale will close. This paper proposes
@@ -46,15 +46,15 @@ export default function Research() {
         <h2 style={{ fontFamily: fontSerif, fontSize: 26, fontWeight: 400, margin: "0 0 2rem 0", color: INK, maxWidth: 580, lineHeight: 1.3 }}>
           Three layers, maintained over the accumulated record of the relationship.
         </h2>
-        <div style={{ borderLeft: `2px solid ${AMBER}`, paddingLeft: 24, display: "flex", flexDirection: "column", gap: 28, maxWidth: 640 }}>
+        <div style={{ borderLeft: `2px solid ${AMBER}`, paddingLeft: 24, display: "flex", flexDirection: "column", gap: 28, maxWidth: 660 }}>
           {layers.map(([t, d]) => (
             <div key={t}>
               <div style={{ fontSize: 11, fontWeight: 500, color: INK, marginBottom: 6, letterSpacing: "0.04em", textTransform: "uppercase", fontFamily: fontMono }}>{t}</div>
-              <div style={{ fontSize: 12, color: "#666", lineHeight: 1.8, fontFamily: fontMono }}>{d}</div>
+              <div style={{ fontSize: 14, color: "#666", lineHeight: 1.8, fontFamily: fontMono }}>{d}</div>
             </div>
           ))}
         </div>
-        <p style={{ fontSize: 12, color: "#666", lineHeight: 1.9, maxWidth: 640, marginTop: "2.5rem", fontFamily: fontMono }}>
+        <p style={{ fontSize: 14, color: "#666", lineHeight: 1.85, maxWidth: 660, marginTop: "2.5rem", fontFamily: fontMono }}>
           The central claim — held as a working position, tested by ablation — is that much of what makes a
           person's behaviour interpretable is carried by the history of the relationship and absent from the
           present moment, so a system that severs want-inference from that record predicts worse, most sharply
@@ -70,9 +70,9 @@ export default function Research() {
         <h2 style={{ fontFamily: fontSerif, fontSize: 22, fontWeight: 500, margin: "0 0 1.75rem 0", color: INK, maxWidth: 700, lineHeight: 1.4 }}>
           The Relational Context Layer: A Reference Architecture for AI Support of Response-Mediated Work
         </h2>
-        <div style={{ maxWidth: 680, marginBottom: "2rem" }}>
+        <div style={{ maxWidth: 700, marginBottom: "2rem" }}>
           {abstractParagraphs.map((p, i) => (
-            <p key={i} style={{ fontSize: 12, color: "#555", lineHeight: 1.9, marginBottom: "1.25rem", fontFamily: fontMono }}>{p}</p>
+            <p key={i} style={{ fontSize: 14, color: "#555", lineHeight: 1.85, marginBottom: "1.25rem", fontFamily: fontMono }}>{p}</p>
           ))}
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 24, flexWrap: "wrap" }}>
@@ -87,7 +87,7 @@ export default function Research() {
 
       {/* ── CORRESPONDENCE ── */}
       <section style={{ padding: "4rem 3rem 6rem" }}>
-        <p style={{ fontSize: 12, color: "#666", lineHeight: 1.9, fontFamily: fontMono }}>
+        <p style={{ fontSize: 14, color: "#666", lineHeight: 1.85, fontFamily: fontMono }}>
           Correspondence: <a href="mailto:christopher.todd.johnson@gmail.com" style={{ color: AMBER_DARK, textDecoration: "none", borderBottom: `0.5px solid ${AMBER_DARK}55` }}>christopher.todd.johnson@gmail.com</a>
         </p>
       </section>

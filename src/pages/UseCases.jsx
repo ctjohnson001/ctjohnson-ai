@@ -8,7 +8,7 @@ export default function UseCases() {
         <h1 style={{ fontFamily: fontSerif, fontSize: "clamp(44px, 5vw, 68px)", fontWeight: 300, lineHeight: 1.05, letterSpacing: "-0.02em", margin: "0 0 2rem 0", color: INK }}>
           Not fluffy.<br />Not general.<br /><em style={{ fontStyle: "italic", color: AMBER_DARK }}>Implementable.</em>
         </h1>
-        <p style={{ fontSize: 12, color: "#666", lineHeight: 1.9, maxWidth: 560, fontFamily: fontMono }}>
+        <p style={{ fontSize: 15, color: "#666", lineHeight: 1.85, maxWidth: 580, fontFamily: fontMono }}>
           The full use case library is being built. Each entry includes tested prompts, step-by-step instructions, and before/after examples. Check back shortly.
         </p>
       </section>

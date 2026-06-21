@@ -8,7 +8,7 @@ export default function Tools() {
         <h1 style={{ fontFamily: fontSerif, fontSize: "clamp(44px, 5vw, 68px)", fontWeight: 300, lineHeight: 1.05, letterSpacing: "-0.02em", margin: "0 0 2rem 0", color: INK }}>
           AI content that<br /><em style={{ fontStyle: "italic", color: AMBER_DARK }}>actually uses AI.</em>
         </h1>
-        <p style={{ fontSize: 12, color: "#666", lineHeight: 1.9, maxWidth: 560, fontFamily: fontMono }}>
+        <p style={{ fontSize: 15, color: "#666", lineHeight: 1.85, maxWidth: 580, fontFamily: fontMono }}>
           The Context Layer Builder, Prompt Generator and ROI Calculator are in development. They'll live here.
         </p>
       </section>

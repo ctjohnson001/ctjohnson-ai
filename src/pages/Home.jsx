@@ -36,7 +36,7 @@ function UseCaseCard({ tag, title, desc }) {
     >
       <div style={{ fontSize: 9, letterSpacing: "0.22em", color: AMBER, textTransform: "uppercase", marginBottom: "1rem", fontFamily: fontMono }}>{tag}</div>
       <h3 style={{ fontFamily: fontSerif, fontSize: 21, fontWeight: 400, margin: "0 0 0.75rem 0", lineHeight: 1.3, color: INK }}>{title}</h3>
-      <p style={{ fontSize: 11, color: "#666", lineHeight: 1.75, margin: 0, fontFamily: fontMono }}>{desc}</p>
+      <p style={{ fontSize: 13, color: "#666", lineHeight: 1.75, margin: 0, fontFamily: fontMono }}>{desc}</p>
     </div>
   );
 }
@@ -50,7 +50,7 @@ function ToolCard({ name, desc }) {
       onMouseLeave={() => setHovered(false)}
     >
       <div style={{ fontSize: 12, color: AMBER, marginBottom: 10, fontFamily: fontMono, letterSpacing: "0.05em" }}>{name}</div>
-      <p style={{ fontSize: 11, color: "#888", lineHeight: 1.75, margin: 0, fontFamily: fontMono }}>{desc}</p>
+      <p style={{ fontSize: 13, color: "#888", lineHeight: 1.75, margin: 0, fontFamily: fontMono }}>{desc}</p>
     </div>
   );
 }
@@ -71,7 +71,7 @@ export default function Home() {
             <em style={{ fontStyle: "italic", color: AMBER_DARK, fontWeight: 400 }}>actually builds</em><br />
             with AI.
           </h1>
-          <p style={{ fontSize: 12, lineHeight: 1.9, color: "#555", maxWidth: 420, margin: "0 0 3rem 0", fontFamily: fontMono }}>
+          <p style={{ fontSize: 15, lineHeight: 1.85, color: "#555", maxWidth: 440, margin: "0 0 3rem 0", fontFamily: fontMono }}>
             25 years turning around organisations across four continents. Now building the frameworks and tools that help finance and operations leaders get real work done with AI — not theory, but implementation.
           </p>
           <div style={{ display: "flex", gap: 20, alignItems: "center" }}>
@@ -86,7 +86,7 @@ export default function Home() {
           <h2 style={{ fontFamily: fontSerif, fontSize: 34, fontWeight: 400, lineHeight: 1.15, margin: "0 0 1.5rem 0", color: INK }}>
             The Relational<br />Context Layer
           </h2>
-          <p style={{ fontSize: 11, lineHeight: 1.9, color: "#555", margin: "0 0 2.25rem 0", maxWidth: 360, fontFamily: fontMono }}>
+          <p style={{ fontSize: 14, lineHeight: 1.85, color: "#555", margin: "0 0 2.25rem 0", maxWidth: 380, fontFamily: fontMono }}>
             Generic AI gives generic output. The difference between an AI tool that impresses in a demo and one that actually delivers in your organisation is context — who you are, how you work, what you know.
           </p>
           <div style={{ borderLeft: `2px solid ${AMBER}`, paddingLeft: 20, display: "flex", flexDirection: "column", gap: 20 }}>
@@ -97,7 +97,7 @@ export default function Home() {
             ].map(([t, d]) => (
               <div key={t}>
                 <div style={{ fontSize: 10, fontWeight: 500, color: INK, marginBottom: 4, letterSpacing: "0.06em", textTransform: "uppercase", fontFamily: fontMono }}>{t}</div>
-                <div style={{ fontSize: 11, color: "#777", lineHeight: 1.65, fontFamily: fontMono }}>{d}</div>
+                <div style={{ fontSize: 13, color: "#777", lineHeight: 1.65, fontFamily: fontMono }}>{d}</div>
               </div>
             ))}
           </div>
@@ -114,7 +114,7 @@ export default function Home() {
           {stats.map(([stat, label]) => (
             <div key={stat}>
               <div style={{ fontFamily: fontSerif, fontSize: 46, fontWeight: 300, color: AMBER_DARK, lineHeight: 1 }}>{stat}</div>
-              <div style={{ fontSize: 11, color: "#777", lineHeight: 1.65, marginTop: 10, fontFamily: fontMono }}>{label}</div>
+              <div style={{ fontSize: 13, color: "#777", lineHeight: 1.65, marginTop: 10, fontFamily: fontMono }}>{label}</div>
             </div>
           ))}
         </div>
@@ -142,7 +142,7 @@ export default function Home() {
             <h2 style={{ fontFamily: fontSerif, fontSize: 46, fontWeight: 400, margin: "0 0 1.75rem 0", lineHeight: 1.1, color: "#F5F3EE" }}>
               AI content that<br /><em style={{ color: AMBER }}>actually uses AI.</em>
             </h2>
-            <p style={{ fontSize: 12, lineHeight: 1.9, color: "#999", margin: "0 0 2.5rem 0", maxWidth: 400, fontFamily: fontMono }}>
+            <p style={{ fontSize: 15, lineHeight: 1.85, color: "#999", margin: "0 0 2.5rem 0", maxWidth: 420, fontFamily: fontMono }}>
               Most content about AI is delivered as dense text — books, PDFs, long articles. There's an irony there. These tools let you interact with the ideas and build something useful for your organisation, right now, in the browser.
             </p>
             <a href="/tools" style={{ display: "inline-block", padding: "12px 28px", border: `0.5px solid ${AMBER}`, color: AMBER, textDecoration: "none", fontSize: 10, letterSpacing: "0.18em", textTransform: "uppercase", fontFamily: fontMono }}>Explore the Tools</a>
@@ -163,10 +163,10 @@ export default function Home() {
             <h2 style={{ fontFamily: fontSerif, fontSize: 38, fontWeight: 400, margin: "0 0 1.5rem 0", lineHeight: 1.15 }}>
               Executive.<br />Strategist.<br />Builder.
             </h2>
-            <p style={{ fontSize: 12, color: "#666", lineHeight: 1.9, margin: "0 0 1.25rem 0", fontFamily: fontMono }}>
+            <p style={{ fontSize: 15, color: "#666", lineHeight: 1.85, margin: "0 0 1.25rem 0", fontFamily: fontMono }}>
               I've spent 25 years in finance and executive leadership across Australia, the US, Russia, China and Europe. Currently serving as CFO of a major aged care provider, where I've led an $85m operating result turnaround and built an AI strategy for the support functions.
             </p>
-            <p style={{ fontSize: 12, color: "#666", lineHeight: 1.9, margin: "0 0 2rem 0", fontFamily: fontMono }}>
+            <p style={{ fontSize: 15, color: "#666", lineHeight: 1.85, margin: "0 0 2rem 0", fontFamily: fontMono }}>
               I'm a CPA and MBA, a former EY Audit Manager, and I build in Python and SQL in my spare time. I'm working on a book.
             </p>
             <a href="/about" style={{ fontSize: 10, letterSpacing: "0.1em", color: "#999", textDecoration: "none", borderBottom: "0.5px solid #ccc", paddingBottom: 2, fontFamily: fontMono }}>Full biography →</a>
@@ -175,7 +175,7 @@ export default function Home() {
             {career.map(([co, role]) => (
               <div key={co} style={{ borderBottom: `0.5px solid ${RULE}`, paddingBottom: 16, marginBottom: 16 }}>
                 <div style={{ fontSize: 13, fontWeight: 500, color: INK, marginBottom: 5, fontFamily: fontMono }}>{co}</div>
-                <div style={{ fontSize: 10, color: "#999", letterSpacing: "0.04em", lineHeight: 1.5, fontFamily: fontMono }}>{role}</div>
+                <div style={{ fontSize: 11, color: "#999", letterSpacing: "0.04em", lineHeight: 1.5, fontFamily: fontMono }}>{role}</div>
               </div>
             ))}
           </div>
@@ -184,12 +184,12 @@ export default function Home() {
 
       {/* ── CONTACT ── */}
       <section style={{ padding: "6rem 3rem", background: AMBER_LIGHT, borderTop: `0.5px solid ${AMBER}35` }}>
-        <div style={{ maxWidth: 620 }}>
+        <div style={{ maxWidth: 640 }}>
           <div style={{ fontSize: 9, letterSpacing: "0.22em", color: AMBER_DARK, marginBottom: "0.75rem", textTransform: "uppercase", fontFamily: fontMono }}>Get in touch</div>
           <h2 style={{ fontFamily: fontSerif, fontSize: 46, fontWeight: 400, margin: "0 0 1.5rem 0", lineHeight: 1.1 }}>
             Speaking. Consulting.<br />The book, when it exists.
           </h2>
-          <p style={{ fontSize: 12, color: "#666", lineHeight: 1.9, margin: "0 0 2.5rem 0", fontFamily: fontMono }}>
+          <p style={{ fontSize: 15, color: "#666", lineHeight: 1.85, margin: "0 0 2.5rem 0", fontFamily: fontMono }}>
             If you're a CFO, transformation executive, or board member thinking seriously about AI implementation — or if you're looking for a speaker who can make this concrete rather than conceptual — get in touch.
           </p>
           <a href="mailto:christopher_todd_johnson@hotmail.com" style={{ display: "inline-block", padding: "14px 32px", background: AMBER_DARK, color: "#fff", textDecoration: "none", fontSize: 10, letterSpacing: "0.16em", textTransform: "uppercase", fontFamily: fontMono }}>
